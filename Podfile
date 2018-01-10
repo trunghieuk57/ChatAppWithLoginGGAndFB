@@ -14,5 +14,7 @@ pod 'Crashlytics', '~> 3.9.3'
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
+pod 'TwitterKit'
+use_frameworks!
 target 'FriendlyChatSwift' do
 end

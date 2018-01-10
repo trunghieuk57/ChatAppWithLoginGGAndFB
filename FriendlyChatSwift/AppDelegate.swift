@@ -18,6 +18,7 @@ import UIKit
 import FBSDKCoreKit
 import Firebase
 import GoogleSignIn
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -59,10 +60,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        Fabric.with([Twitter.self])
         FirebaseApp.configure()
+        
+        //Google login
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        //Facebook login
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        //Twitter login
+        Twitter.sharedInstance().start(withConsumerKey: "510HoP6rxdeSgR59ardTOtzl2", consumerSecret: "wDhDhqDstsQf4ZATjCfY8cjNrdtMds80y0ckT4ta7mvmo5zkXv")
         return true
     }
 }

@@ -37,6 +37,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+                <string>twitterkit-510HoP6rxdeSgR59ardTOtzl2 </string>
 				<string>fb493658677701265</string>
 			</array>
 		</dict>
@@ -49,6 +50,8 @@
 	<string>FriendlyChatSwift</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+        <string>twitter</string>
+        <string>twitterauth</string>
 		<string>fbapi</string>
 		<string>fb-messenger-share-api</string>
 		<string>fbauth2</string>

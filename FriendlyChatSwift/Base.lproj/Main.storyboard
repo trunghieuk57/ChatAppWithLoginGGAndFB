@@ -23,18 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Friendly Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLb-ik-2ju">
-                                <rect key="frame" x="102" y="204" width="171.5" height="36"/>
+                                <rect key="frame" x="102.5" y="204" width="171.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWE-RA-FN4">
-                                <rect key="frame" x="164" y="470" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOL-0c-Cx3" customClass="GIDSignInButton">
-                                <rect key="frame" x="109" y="309" width="156" height="49"/>
+                                <rect key="frame" x="16" y="309" width="343" height="49"/>
                                 <color key="backgroundColor" red="1" green="0.56078431370000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -42,7 +37,9 @@
                         <constraints>
                             <constraint firstItem="YLb-ik-2ju" firstAttribute="centerX" secondItem="OTh-0Q-7iK" secondAttribute="centerX" id="Jua-8g-bRY"/>
                             <constraint firstItem="zOL-0c-Cx3" firstAttribute="centerY" secondItem="OTh-0Q-7iK" secondAttribute="centerY" id="Xt2-gW-Jv6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zOL-0c-Cx3" secondAttribute="trailing" id="bdk-Hg-E77"/>
                             <constraint firstItem="zOL-0c-Cx3" firstAttribute="centerX" secondItem="YLb-ik-2ju" secondAttribute="centerX" id="fGs-By-vcO"/>
+                            <constraint firstItem="zOL-0c-Cx3" firstAttribute="leading" secondItem="OTh-0Q-7iK" secondAttribute="leadingMargin" id="m69-qv-sqA"/>
                             <constraint firstItem="zOL-0c-Cx3" firstAttribute="top" secondItem="YLb-ik-2ju" secondAttribute="bottom" constant="69" id="yBm-ij-LyW"/>
                         </constraints>
                     </view>
