@@ -84,6 +84,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
         twitterButton.center = newCenter
     }
     
+    //Login Facebook
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if error != nil{
             print(error)
